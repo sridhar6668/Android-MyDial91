@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:paddingTop="20dp"
+
+    tools:context="com.example.root.internationalcall.NumberPadActivity">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:numeric="decimal"
+        android:ems="15"
+        android:text="91-"
+        android:textSize="30sp"
+        android:id="@+id/numberPad"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+         />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="Call"
+        android:id="@+id/callButton"
+        android:layout_below="@+id/numberPad"
+        android:layout_centerHorizontal="true"
+        android:onClick="makeCallView"/>
+</RelativeLayout>
