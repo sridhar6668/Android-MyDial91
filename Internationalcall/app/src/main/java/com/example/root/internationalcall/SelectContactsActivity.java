@@ -1,9 +1,12 @@
 package com.example.root.internationalcall;
 
+import android.app.ActionBar;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.location.Address;
 import android.net.Uri;
 import android.provider.ContactsContract;
@@ -45,7 +48,8 @@ public class SelectContactsActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_contacts);
         displayLog("Inside selectContactsActivity");
-
+        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#277554"));
+        getSupportActionBar().setBackgroundDrawable(colorDrawable);
         fetchContacts();
 
         setUpListView((ListView) findViewById(R.id.contactsListView),"");
@@ -182,9 +186,9 @@ public class SelectContactsActivity extends ActionBarActivity {
 
                 if (contactsArray[i][0].toLowerCase().indexOf(filterString) != -1) {
                     item = new HashMap<String,String>();
-                    item.put( "line1", contactsArray[i][0]);
-                    item.put( "line2", contactsArray[i][1]);
-                    list.add( item );
+                    item.put( "line1",contactsArray[i][0] );
+                    item.put( "line2", contactsArray[i][1]+ "\n");
+                    list.add(item );
                 }
 
         }

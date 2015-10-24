@@ -23,10 +23,11 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="15dp"
         android:text="Call"
         android:id="@+id/callButton"
         android:layout_below="@+id/numberPad"
         android:layout_centerHorizontal="true"
-        android:onClick="makeCallView"/>
+        android:onClick="makeCallView"
+        android:textColor="#ffffff"
+        android:background="#ff7a5a"/>
 </RelativeLayout>

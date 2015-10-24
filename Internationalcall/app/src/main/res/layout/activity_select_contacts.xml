@@ -13,7 +13,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/contactsListView"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:divider="@android:color/transparent"
+        />
 
     <ImageButton
         android:layout_width="60dp"

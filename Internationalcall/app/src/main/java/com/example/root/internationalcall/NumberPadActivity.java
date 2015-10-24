@@ -1,6 +1,8 @@
 package com.example.root.internationalcall;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -20,6 +22,9 @@ public class NumberPadActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_number_pad);
+
+        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#277554"));
+        getSupportActionBar().setBackgroundDrawable(colorDrawable);
 
         EditText et = (EditText) findViewById(R.id.numberPad);
         et.setSelection(et.getText().length());
