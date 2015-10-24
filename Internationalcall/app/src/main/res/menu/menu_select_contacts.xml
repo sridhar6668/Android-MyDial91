@@ -8,6 +8,4 @@
         app:actionViewClass="android.widget.SearchView"
         android:title="searchBar" />
 
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
-        app:showAsAction="never" />
 </menu>

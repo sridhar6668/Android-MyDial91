@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">International call</string>
+    <string name="app_name">My Dial91</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_select_contacts">SelectContactsActivity</string>
-    <string name="title_activity_number_pad">NumberPadActivity</string>
+    <string name="title_activity_select_contacts">My Dial91</string>
+    <string name="title_activity_number_pad">Dialer</string>
     <string name="title_activity_outgoing_call_handler"></string>
 </resources>
